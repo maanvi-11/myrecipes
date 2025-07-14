@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yummiest Ever</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Yummiest Ever</h1>
+    <p>Discover delicious recipes for every occasion!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <button>All</button>
+    <a href="breakfast.html"><button>Breakfast</button></a>
+    <a href="lunch.html"><button>Lunch</button></a>
+    <a href="snack.html"><button>Snack</button></a>
+    <a href="dinner.html"><button>Dinner</button></a>
+  </nav>
+
+  <!-- Search and Filter -->
+  <section class="search-filter">
+    <input type="text" id="searchBar" placeholder="Search for a recipe..." onkeyup="searchRecipes()"/>
+    <select id="difficultyFilter" onchange="filterDifficulty()">
+      <option value="all">Filter by Difficulty</option>
+      <option value="easy">Easy to Hard</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard to Easy</option>
+    </select>
+  </section>
+
+  <!-- Recipes Grid -->
+  <main class="container">
+    <div class="recipe-grid">
+
+       <div class="recipe-card breakfast easy">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://shwetainthekitchen.com/wp-content/uploads/2022/01/Idli-Sambar-720x1080.jpg" alt="Idli">
+            <h3>Sambar Idli</h3>
+          </div>
+          <div class="card-back">
+            <p>Soft, steamed rice cakes, perfect for breakfast.</p>
+            <a href="idli.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card lunch medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.l-O-RY7v2nl4mp_IbA5bnAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sambar Rice" width="150px" height="200px">
+            <h3>Sambar Rice</h3>
+          </div>
+          <div class="card-back">
+            <p>Spiced lentil and rice combo from Tamil Nadu.</p>
+            <a href="sambarice.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card breakfast easy">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.gac2mgCYHx3KJ4iD6wGBpAHaLG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dosa">
+         <h3>poha</h3>
+          </div>
+          <div class="card-back">
+            <p>soft flatten rice with flavorful indian aromas</p>
+            <a href="poha.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card snacks easy">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://vegecravings.com/wp-content/uploads/2018/06/Bhel-Puri-Recipe-Step-By-Step-Instructions.jpg" alt="Belpuri" width="150px" height="200px">
+            <h3>Belpuri</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="belpuri.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card snacks medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://static.independent.co.uk/2023/07/12/08/iStock-1314329942.jpeg" alt="panipuri" width="150px" height="200px">
+            <h3>Panipuri</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="panipuri.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card snacks hard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.ruchiskitchen.com/wp-content/uploads/2017/02/Rasmalai-recipe-3.jpg.webp" alt="Rasmalai" width="150px" height="200px">
+            <h3>Rasmalai</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="rasmalai.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card snacks hard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.dicksonpizza.uk/upload-images/dinner-food-pie-pizza-wallpaper-preview.jpg" alt="pizza" width="150px" height="200px">
+            <h3>pizza</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="pizza.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card dinner medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://centslessdeals.com/wp-content/uploads/2022/09/Skillet-Pasta-With-Ground-Beef-TheShortcutKitchen-9-1024x1536.jpg" alt="Pasta" width="150px" height="200px">
+            <h3>Pasta</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="pasta.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card dinner medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.chilipeppermadness.com/wp-content/uploads/2023/06/Gochujang-Noodles-Recipe1.jpg" alt="noodles" width="150px" height="200px">
+            <h3>Noodles</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="noodles.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card dinner hard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://spicecravings.com/wp-content/uploads/2021/04/Chicken-Biryani-Featured-2.jpg" alt="chicken biryani" width="150px" height="200px">
+            <h3>Chicken Biryani</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="chickenbiryani.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card dinner hard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.UqbG-3qERGMq7MbEK418FAHaET?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dal chawal" width="150px" height="200px">
+            <h3>Dal chawal</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="dal.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card breakfast hard">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/originals/68/50/eb/6850eba3ef7f99b6a9f4b0ea1049ae0f.png" alt="Dokla" width="10px" height="10px">
+            <h3>Dokla</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="dokla.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card lunch easy">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://cdn.shopify.com/s/files/1/0638/6460/2881/files/Jeera_rice_and_dal_600x600.jpg?v=1715148708" alt="jeera rice" width="150px" height="200px">
+            <h3>Jeera rice</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="jeera.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card lunch medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/aloo-paratha-recipe.webp" alt="aloo paratha" width="150px" height="200px">        
+            <h3>aloo paratha</h3>
+          </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="aloo.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-card lunch medium">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://cdn1.foodviva.com/static-content/food-images/rice-recipes/vegetable-pulav-recipe/vegetable-pulav-recipe.jpg" alt="veg pulao" width="10px" height="20px">
+            <h3>Veg Puloa</h3>
+            </div>
+          <div class="card-back">
+            <p>Crispy South Indian crepe made from fermented rice & dal.</p>
+            <a href="puloa.html">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p> 2025 Yummiest Ever. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
